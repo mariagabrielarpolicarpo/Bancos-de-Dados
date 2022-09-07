@@ -41,15 +41,17 @@ Vantagens das alternativas (2) e (3):
 3) suporta estruturas mais complexas
 
 ### Índices Primários e Secundários
-Índice primário ou de agrupamento
+#### Índice primário ou de agrupamento
 - arquivo ordenado sequencialmente
 - chave de busca define ordem do arquivo
-Índice secundário
+
+#### Índice secundário
 - índice de não agrupamento
 - índice não necessariamente único
 
 ### Índices Densos e Esparsos
-Denso
+#### Denso
 - uma entrada de índice para cada valor de chave
-Esparso
+
+#### Esparso
 - uma entrada índice para mais de um valor de chave
