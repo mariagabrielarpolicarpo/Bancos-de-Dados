@@ -1,29 +1,18 @@
-Composição de operações
+# Otimização
 
-Closure property
+## Composição de operações
+
+### Closure property
 - cada operação recebe tabelas e retorna uma tabela
 - operações podem ser compostas
 
 Exemplo: operação_2(operação_1(relação)a)) 
 
-
 relação_b <- operação_1(relação_a)
 relação_c <- operação_2(relação_b) 
 
 
-SQL p/ Álgebra
-
-Versão SQL
-
-SELECT Codigo, Nome 
-FROM PESSOA
-WHERE AnoFiliacao = 1990
-
-Versão em álgebra
-pi codigo, nome (sigma anofiliacao = 1990 (PESSOA))
-
-
-Regras de Transformação 
+## Regras de Transformação 
 
 1) Operações seleção conjuntivas podem se converter em cascatas de seleção 
 2) Operação de seleção é comutativa
@@ -32,7 +21,7 @@ Regras de Transformação
 4) Seleção e junção (ou produto cartesiano) são comutativas
 - se atributos da seleção são de apenas uma das relações
 5) Operações de união e interseção são comutativas (a diferença não é) 
-6) Seleção é comutativa com operações de cojunto (união, interseção e diferença)
+6) Seleção é comutativa com operações de conjunto (união, interseção e diferença)
 - sel (A U B) equivale a sel(A) U sel(B) 
 7) As operações de junção e produto cartesiano são comutativas
 8) As operações de junção, produto cartesiano, união e interseção são associativas (A...B)...C equivale a A...(B...C) 
@@ -49,9 +38,10 @@ Regras de Transformação
 - projL(A junção B) equivale (proj a1,a2, ...,an (A)) junção (proj b1,b2,...bm(B))
 
 
-Heurísticas
+## Heurísticas
 
-Boas práticas
+### Boas práticas
+
 1) quebrar operações de seleção conjuntivas (1) 
 - me dá maior liberdade 
 2) mover seleção em direção às folhas (2),(3), (4), (5) e (6) (objetivo de fazer a seleção o mais cedo possível) 
