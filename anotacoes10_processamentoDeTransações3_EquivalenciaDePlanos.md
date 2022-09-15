@@ -1,0 +1,1 @@
+# Equivalência de Planos 
