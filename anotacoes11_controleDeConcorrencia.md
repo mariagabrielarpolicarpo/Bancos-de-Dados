@@ -86,9 +86,9 @@ Problema do bloqueio binário
 #### Matriz de compatibilidade: 
 
 
-		shared 	exclusive
-shared		   S	     N
-exclusive 	   N	     N
+	shared 	exclusive
+shared      S	 N
+exclusive   N	 N
 
 
 #### Gerenciador de bloqueio 
